@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  opacity: 100%;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  opacity: 50%;
+  width: 3px;
+}
+
+::-moz-scrollbar {
+  opacity: 50%;
+  width: 3px;
+}
+::-moz-scrollbar-thumb {
+  background-color: #d1d1d1;
+  opacity: 50%;
+  width: 3px;
+}
+
+::-o-scrollbar {
+  opacity: 50%;
+  width: 3px;
+}
+::-o-scrollbar-thumb {
+  background-color: #d1d1d1;
+  opacity: 50%;
+  width: 3px;
+}
+
+@layer components {
+  .text-field {
+    @apply font-light pb-1 mt-2 bg-[#111111] outline-none border-white border-b-2 focus:border-[#9F47F0] hover:delay-75 hover:transition-all hover:ease-out hover:border-[#9F47F0];
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url(/src/fonts/HelveticaNeue.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url(/src/fonts/HelveticaNeue-Medium.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url(/src/fonts/HelveticaNeue-Bold.ttf);
+    font-weight: 700;
+  }
+}
