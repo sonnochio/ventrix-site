@@ -1,4 +1,4 @@
-# VentrixSite - Specifically "Elsa's Shitty Existing Code"
+# VentrixSite
 
 VentrixLandingPage/
 ├─ public/
@@ -16,6 +16,7 @@ VentrixLandingPage/
 │ ├─ index.js
 │ └─ styles.css
 └─ package.json
+
 #Install Node.js
 npx create-react-app ventrix-landing-page
 cd ventrix-landing-page
