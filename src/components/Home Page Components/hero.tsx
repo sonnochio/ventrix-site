@@ -2,6 +2,7 @@ import React from "react";
 import VentrixLogo from "../../assets/x.svg";
 import VentrixTextLogo from "../../assets/typography.svg";
 
+
 const Hero = () => {
   return (
     <>
@@ -11,21 +12,17 @@ const Hero = () => {
           backgroundImage: `url(${"https://media.graphassets.com/output=format:jpg/resize=height:800,fit:max/L2Jt5vTTMCwVwOStass0"})`,
         }}
       >
-        <div className="">
-          {/* navigation bar */}
-          <div className="flex justify-center md:justify-start items-center py-8 gap-3">
-            <img src={VentrixLogo} alt="" className="w-10 animate-spin" />
-            <img src={VentrixTextLogo} alt="" className="w-52" />
+        <div className="flex flex-col items-center justify-center flex-grow">
+          {/* logo section */}
+          <div className="flex items-center py-8 gap-3">
+            <img src={VentrixLogo} alt="" className="w-12 animate-spin" />
+            <img src={VentrixTextLogo} alt="" className="w-60" />
           </div>
 
           {/* hero section */}
-          <div className="text-white mt-2 md:mt-6">
-            <h1 className="md:hidden text-[1.6rem] font-bold">
-              Modular Carbon Capture for a Sustainable Tomorrow
-            </h1>
-            <h1 className="hidden md:flex text-[2.3rem] font-bold">
-              Modular Carbon Capture for a
-              <br /> Sustainable Tomorrow
+          <div className="text-white mt-4 md:mt-6 text-center">
+            <h1 className="text-[1.2rem] md:text-[1.8rem] font-bold text-gray-300">
+              Scaling modular carbon capture through existing infrastructures
             </h1>
           </div>
         </div>
